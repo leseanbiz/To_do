@@ -32,7 +32,6 @@ const mapDispatchToProps = dispatch => ({
 
 const TaskList = ({tasksState, deleteAll}) => {
   const classes = useStyles();
-  console.log("taskState-taskList:", tasksState);
   return (
     <Paper>
       <List

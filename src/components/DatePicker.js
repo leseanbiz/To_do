@@ -14,9 +14,6 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-// const date = Date.now().toString();
-// console.log(date.getDay());
-
  const DatePicker = ({date, setDate}) => {
   const classes = useStyles();
 

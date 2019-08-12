@@ -29,7 +29,6 @@ class App extends Component {
 
 const mapStateToProps = state => {
  return { recipesState: state.recipesState };
- // return state;
 }
 
   export default connect(mapStateToProps) (App);

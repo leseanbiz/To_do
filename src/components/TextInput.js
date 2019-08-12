@@ -24,7 +24,6 @@ const theme = createMuiTheme({
 
 export default function TextInput({task, setTask, addTask, date}) {
   const classes = useStyles();
-  // console.log(task);
   return (
     <div className={classes.root}>
       <ThemeProvider theme={theme}>

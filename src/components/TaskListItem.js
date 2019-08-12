@@ -12,7 +12,6 @@ import Done from '@material-ui/icons/Done';
 import DeleteIcon from '@material-ui/icons/Delete';
 import { connect } from 'react-redux';
 import { doMarkCompleted, doDeleteTask } from '../actions/tasks';
-// import { getTasks } from '../selectors/tasks';
 
 const useStyles = makeStyles(theme => ({
   taskActive: {
@@ -62,8 +61,6 @@ const TaskListItem = ({ id, title, date, index, details, completed, markComplete
     setOpen(!open);
   }
 
-  console.log("title-Tasklistitem:", title, date, id, completed)
-
   return (
       <div data-task={`task_number: ${id}`} className={completed ? classes.taskComplete : classes.taskActive}>
        <ListItem>
@@ -78,7 +75,6 @@ const TaskListItem = ({ id, title, date, index, details, completed, markComplete
         </ListItemIcon>
         <Tooltip title="View details">
           <IconButton onClick={handleClick} className={classes.expandMoreHover}>
-            {/* //make animation smoother */}
             {open ? <ExpandLess /> : <ExpandMore />}
           </IconButton>
         </Tooltip>

@@ -5,7 +5,6 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 
  function TaskSwitch() {
   const [checked, setChecked] = React.useState(false);
-  console.log(checked);
 
   return (
     <FormGroup>
